@@ -1,5 +1,4 @@
-# Task 3: Swap integer and fractional parts
-A = float(input())  # e.g., 123.45
+A = float(input())  
 integer_part = int(A)
 fractional_part = int(round((A - integer_part) * 100))
 

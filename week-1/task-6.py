@@ -1,8 +1,6 @@
-# Task 6: Smart Calculator
 num1 = float(input("First number: "))
 op = input("Operation (+, -, *, /): ")
 num2 = float(input("Second number: "))
-
 if op == '+':
     result = num1 + num2
 elif op == '-':

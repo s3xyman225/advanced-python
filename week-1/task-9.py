@@ -1,4 +1,3 @@
-# Task 9: Lucky ticket
 ticket = input().strip()
 if len(ticket) != 6:
     print("NO")
