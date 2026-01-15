@@ -1,18 +1,20 @@
 class Person:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, name):   
+        self._name = name
 
     def info(self):
-        print("Name:", self.name)
+        return f"Name: {self._name}"
 
 
 class Student(Person):
     def info(self):
-        print("Student name:", self.name)
+        return f"Student name: {self._name}"
 
 
-p = Person("John")
-s = Student("Alice")
+people = [
+    Person("Bob"),
+    Student("Nazar")
+]
 
-p.info()
-s.info()
+for p in people:
+    print(p.info())
